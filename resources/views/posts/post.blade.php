@@ -4,4 +4,5 @@
     </h2>
     <p class="blog-post-meta">{{ $post->created_at->toDayDateTimeString() }}</p>
     <p>{{ $post->body }}</p>
+    <hr>
 </div>
