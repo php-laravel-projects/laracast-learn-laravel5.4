@@ -24,6 +24,6 @@ Route::get('about', function() {
 });
 
 Route::get('/posts', 'PostsController@index');
-// Route::get('/posts/{postId}', 'PostsController@show');
-Route::get('/posts/create', 'PostsController@create');
+Route::get('/posts/{post}', 'PostsController@show');
+Route::get('/post/create', 'PostsController@create');
 Route::post('/posts', 'PostsController@store');
