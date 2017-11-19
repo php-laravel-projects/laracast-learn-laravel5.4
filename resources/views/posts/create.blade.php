@@ -2,10 +2,11 @@
 
 @section('content')
     <div class="col-sm-8 blog-main">
-        <h3>Publish new post</h3>
-        <form>
+        <h3>Publish new post</h3><hr>
+        <form method="POST" action="/posts">
+            {{ csrf_field() }}
             <div class="form-group">
-                <input type="text" class="form-control" id="title" aria-describedby="Post Title" placeholder="Title for the post">
+                <input type="text" class="form-control" id="title" name="title" aria-describedby="Post Title" placeholder="Title for the post">
             </div>
             <div class="form-group">
                 <label for="body">Content</label>
