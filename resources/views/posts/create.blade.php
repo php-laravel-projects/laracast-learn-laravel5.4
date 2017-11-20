@@ -7,11 +7,11 @@
             {{ csrf_field() }}
             <div class="form-group">
                 <label for="title">Title</label>
-                <input type="text" class="form-control" id="title" name="title" aria-describedby="Post Title">
+                <input type="text" class="form-control" id="title" name="title" aria-describedby="Post Title" required>
             </div>
             <div class="form-group">
                 <label for="body">Content</label>
-                <textarea id="body" name="body" class="form-control"></textarea>
+                <textarea id="body" name="body" class="form-control" required></textarea>
             </div>
             @include('layouts.errors')
             <button type="submit" class="btn btn-primary">Publish</button>
